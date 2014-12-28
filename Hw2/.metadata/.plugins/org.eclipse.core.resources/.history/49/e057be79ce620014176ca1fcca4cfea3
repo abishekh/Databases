@@ -1,0 +1,173 @@
+package com.cs585.abishekh;
+
+import java.io.*;
+import java.util.*;
+import java.lang.String;
+import java.sql.*;
+
+import org.apache.commons.cli.BasicParser;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
+
+import oracle.jdbc.*;
+import oracle.sql.*;
+
+
+/**
+ * @author abishekh
+ *
+ */
+
+public class HW2 {
+
+
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		CommandLineParser parser = new BasicParser();
+
+		Options options = new Options();
+
+		//Option 1
+		Option windowoption = new Option("window",true,"Perform a window query.For finding all objects within a window");
+		windowoption.setArgs(5);
+		windowoption.setValueSeparator(' ');
+		options.addOption(windowoption);
+
+		//Option 2
+		Option withinoption =new Option("within",true,"Perform a within distance query.For finding all buildings and tramstops within a give distance of a student");
+		withinoption.setArgs(2);
+		withinoption.setValueSeparator(' ');
+		options.addOption(withinoption);
+
+		//Option 3
+		Option nearest_neighbor =new Option("nearest_neighbor",true,"Perform a nearest neighbor query.For finding nearest K objects to a given object");
+		nearest_neighbor.setArgs(3);
+		nearest_neighbor.setValueSeparator(' ');
+		options.addOption(nearest_neighbor);
+
+
+		//Option 4
+		Option fixed =new Option("fixed",true,"Hardcoded queries");
+		fixed.setArgs(1);
+		fixed.setValueSeparator(' ');
+		options.addOption(fixed);
+
+
+		try{
+			CommandLine commandline = parser.parse(options,args);
+		
+
+			if (commandline.hasOption("within")){
+				
+				String[] commandchain = commandline.getOptionValues("within");
+				
+				for(String s: commandchain)
+				{
+					System.out.println(s);
+				}
+				System.out.println("Hello");
+				System.out.println("Length is "+commandchain.length);
+			}
+
+			if (commandline.hasOption("window")){
+				
+				String[] commandchain = commandline.getOptionValues("window");
+				
+				for(String s: commandchain)
+				{
+					System.out.println(s);
+				}
+
+			}
+
+
+			if (commandline.hasOption("nearest_neighbor")){
+				
+				String[] commandchain = commandline.getOptionValues("nearest_neighbor");
+				for(String s: commandchain)
+				{
+					System.out.println(s);
+				}
+
+			}
+
+
+			if (commandline.hasOption("fixed")){
+
+			
+			
+				//Insert Switch case here
+				switch(Integer.parseInt(commandline.getOptionValue("fixed"))){
+				case 1:
+					System.out.print("Executing Hard query 1");
+					/*
+					 * Find the ids of all the students and buildings cover
+					 *  by tram stops: t2ohe and t6ssl.
+					 */
+					
+					
+					break;
+				case 2:
+					
+					/*
+					 * For each student, list the ID’s of the 2 nearest tram stops.
+					 */
+					System.out.print("Executing Hard query 2");
+					break;
+				case 3:
+					
+					/*We say a tram stop covers a building if it is within distance 250 to that building.
+						Find the ID’s of the tram stop that cover the most buildings.
+					 * 
+					 */
+					System.out.print("Executing Hard query 3");
+					break;
+				case 4:
+					
+					/*  We say a student is called a reverse nearest neighbor of a building if it is that
+						building’s nearest student. Find the ID’s of the top 5 students that have the most reverse nearest neighbors 
+						together with their number of reverse nearest neighbors.
+					 * 
+					 */
+					System.out.print("Executing Hard query 4");
+					break;
+				case 5:
+					
+					
+					/*
+					 * Find the coordinates of the lower left and upper right vertex of the MBR that
+					 *  fully contains all buildings whose names are of the form ’SS%’. 
+					 *  Note that you cannot manually figure out these buildings in your program.
+					 */
+					System.out.print("Executing Hard query 5");
+					break;
+					
+				}
+				
+			
+			}
+
+		}
+
+		catch (ParseException e)
+		{
+			e.printStackTrace();
+		}
+
+		catch(NullPointerException e){
+			System.out.println(" Bad argument . Please refer to README.");
+			e.printStackTrace();
+		}
+
+
+	}//main
+
+} //class

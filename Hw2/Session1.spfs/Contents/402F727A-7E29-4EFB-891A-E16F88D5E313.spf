@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>Spatial</string>
+			<key>host</key>
+			<string>localhost</string>
+			<key>kcid</key>
+			<string>6558104891867480955</string>
+			<key>name</key>
+			<string>localhost-abishekh</string>
+			<key>password</key>
+			<string>cs585</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSocketConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>abishekh</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClVzdHVJRNIeHy0uXxAP
+			TlNNdXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5TTXV0
+			YWJsZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tleWVk
+			QXJjaGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBLAFIA
+			WgBlAGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIAwwDF
+			AMoA1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEwATUBRwFLAVQB
+			WQFoAWwBdAF5AXwBjgGRAZYAAAAAAAACAQAAAAAAAAA6AAAAAAAA
+			AAAAAAAAAAABmA==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 811}, {848, 629}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>CREATE TABLE `student` (
+  `stuID` INT(10) UNSIGNED NOT NULL,
+  `location` POINT NOT NULL,
+  PRIMARY KEY (`stuID`),
+  UNIQUE KEY `stuID` (`stuID`),
+  SPATIAL KEY `location` (`location`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+DROP TABLE student;
+
+
+INSERT INTO student(stuID,location) VALUES (0,	GeomFromText( ' POINT(228 102) ' )),
+(1,	GeomFromText( ' POINT(220 112) ' )),
+(2,	GeomFromText( ' POINT(213 135) ' )),
+(3,	GeomFromText( ' POINT(189 177) ' )),
+(4,	GeomFromText( ' POINT(180 202) ' )),
+(5,	GeomFromText( ' POINT(166 231) ' )),
+(6,	GeomFromText( ' POINT(153 257) ' )),
+(7,	GeomFromText( ' POINT(138 278) ' )),
+(8,	GeomFromText( ' POINT(125 300) ' )),
+(9,	GeomFromText( ' POINT(116 320) ' )),
+(10,	GeomFromText( ' POINT(94 369) ' )),
+(11,	GeomFromText( ' POINT(104 394) ' )),
+(12,	GeomFromText( ' POINT(136 409) ' )),
+(13,	GeomFromText( ' POINT(171 430) ' )),
+(14,	GeomFromText( ' POINT(195 438) ' )),
+(15,	GeomFromText( ' POINT(221 453) ' )),
+(16,	GeomFromText( ' POINT(250 462) ' )),
+(17,	GeomFromText( ' POINT(283 485) ' )),
+(18,	GeomFromText( ' POINT(320 505) ' )),
+(19,	GeomFromText( ' POINT(342 502) ' )),
+(20,	GeomFromText( ' POINT(365 475) ' )),
+(21,	GeomFromText( ' POINT(320 531) ' )),
+(22,	GeomFromText( ' POINT(318 561) ' )),
+(23,	GeomFromText( ' POINT(439 318) ' )),
+(24,	GeomFromText( ' POINT(422 344) ' )),
+(25,	GeomFromText( ' POINT(412 378) ' )),
+(26,	GeomFromText( ' POINT(484 233) ' )),
+(27,	GeomFromText( ' POINT(504 208) ' )),
+(28,	GeomFromText( ' POINT(518 175) ' )),
+(29,	GeomFromText( ' POINT(516 290) ' )),
+(30,	GeomFromText( ' POINT(531 299) ' )),
+(31,	GeomFromText( ' POINT(588 328) ' )),
+(32,	GeomFromText( ' POINT(637 352) ' )),
+(33,	GeomFromText( ' POINT(657 363) ' )),
+(34,	GeomFromText( ' POINT(448 409) ' )),
+(35,	GeomFromText( ' POINT(464 420) ' )),
+(36,	GeomFromText( ' POINT(484 428) ' )),
+(37,	GeomFromText( ' POINT(491 432) ' )),
+(38,	GeomFromText( ' POINT(507 438) ' )),
+(39,	GeomFromText( ' POINT(548 462) ' )),
+(40,	GeomFromText( ' POINT(583 480) ' )),
+(41,	GeomFromText( ' POINT(302 197) ' )),
+(42,	GeomFromText( ' POINT(290 188) ' )),
+(43,	GeomFromText( ' POINT(297 202) ' )),
+(44,	GeomFromText( ' POINT(358 199) ' )),
+(45,	GeomFromText( ' POINT(384 214) ' )),
+(46,	GeomFromText( ' POINT(281 162) ' )),
+(47,	GeomFromText( ' POINT(264 314) ' )),
+(48,	GeomFromText( ' POINT(256 302) ' )),
+(49,	GeomFromText( ' POINT(221 285) ' )),
+(50,	GeomFromText( ' POINT(197 275) ' )),
+(51,	GeomFromText( ' POINT(179 338) ' )),
+(52,	GeomFromText( ' POINT(161 325) ' )),
+(53,	GeomFromText( ' POINT(378 280) ' )),
+(54,	GeomFromText( ' POINT(362 267) ' )),
+(55,	GeomFromText( ' POINT(530 364) ' )),
+(56,	GeomFromText( ' POINT(535 353) ' )),
+(57,	GeomFromText( ' POINT(589 448) ' )),
+(58,	GeomFromText( ' POINT(691 456) ' )),
+(59,	GeomFromText( ' POINT(698 427) ' )),
+(60,	GeomFromText( ' POINT(716 430) ' )),
+(61,	GeomFromText( ' POINT(723 446) ' )),
+(62,	GeomFromText( ' POINT(687 503) ' )),
+(63,	GeomFromText( ' POINT(674 525) ' )),
+(64,	GeomFromText( ' POINT(652 523) ' )),
+(65,	GeomFromText( ' POINT(645 539) ' )),
+(66,	GeomFromText( ' POINT(659 309) ' )),
+(67,	GeomFromText( ' POINT(716 340) ' )),
+(68,	GeomFromText( ' POINT(524 150) ' )),
+(69,	GeomFromText( ' POINT(476 258) ' )),
+(70,	GeomFromText( ' POINT(241 269) ' )),
+(71,	GeomFromText( ' POINT(284 409) ' )),
+(72,	GeomFromText( ' POINT(272 409) ' )),
+(73,	GeomFromText( ' POINT(204 367) ' )),
+(74,	GeomFromText( ' POINT(231 371) ' )),
+(75,	GeomFromText( ' POINT(381 424) ' )),
+(76,	GeomFromText( ' POINT(466 471) ' )),
+(77,	GeomFromText( ' POINT(338 96) ' )),
+(78,	GeomFromText( ' POINT(349 78) ' )),
+(79,	GeomFromText( ' POINT(409 132) ' ));
+
+
+
+
+</string>
+			<key>table</key>
+			<string>student</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>202</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>INSERT INTO student(stuID,location) VALUES (0,	GeomFromText( ' POINT(228 102) ' )),
+(1,	GeomFromText( ' POINT(220 112) ' )),
+(2,	GeomFromText( ' POINT(213 135) ' )),
+(3,	GeomFromText( ' POINT(189 177) ' )),
+(4,	GeomFromText( ' POINT(180 202) ' )),
+(5,	GeomFromText( ' POINT(166 231) ' )),
+(6,	GeomFromText( ' POINT(153 257) ' )),
+(7,	GeomFromText( ' POINT(138 278) ' )),
+(8,	GeomFromText( ' POINT(125 300) ' )),
+(9,	GeomFromText( ' POINT(116 320) ' )),
+(10,	GeomFromText( ' POINT(94 369) ' )),
+(11,	GeomFromText( ' POINT(104 394) ' )),
+(12,	GeomFromText( ' POINT(136 409) ' )),
+(13,	GeomFromText( ' POINT(171 430) ' )),
+(14,	GeomFromText( ' POINT(195 438) ' )),
+(15,	GeomFromText( ' POINT(221 453) ' )),
+(16,	GeomFromText( ' POINT(250 462) ' )),
+(17,	GeomFromText( ' POINT(283 485) ' )),
+(18,	GeomFromText( ' POINT(320 505) ' )),
+(19,	GeomFromText( ' POINT(342 502) ' )),
+(20,	GeomFromText( ' POINT(365 475) ' )),
+(21,	GeomFromText( ' POINT(320 531) ' )),
+(22,	GeomFromText( ' POINT(318 561) ' )),
+(23,	GeomFromText( ' POINT(439 318) ' )),
+(24,	GeomFromText( ' POINT(422 344) ' )),
+(25,	GeomFromText( ' POINT(412 378) ' )),
+(26,	GeomFromText( ' POINT(484 233) ' )),
+(27,	GeomFromText( ' POINT(504 208) ' )),
+(28,	GeomFromText( ' POINT(518 175) ' )),
+(29,	GeomFromText( ' POINT(516 290) ' )),
+(30,	GeomFromText( ' POINT(531 299) ' )),
+(31,	GeomFromText( ' POINT(588 328) ' )),
+(32,	GeomFromText( ' POINT(637 352) ' )),
+(33,	GeomFromText( ' POINT(657 363) ' )),
+(34,	GeomFromText( ' POINT(448 409) ' )),
+(35,	GeomFromText( ' POINT(464 420) ' )),
+(36,	GeomFromText( ' POINT(484 428) ' )),
+(37,	GeomFromText( ' POINT(491 432) ' )),
+(38,	GeomFromText( ' POINT(507 438) ' )),
+(39,	GeomFromText( ' POINT(548 462) ' )),
+(40,	GeomFromText( ' POINT(583 480) ' )),
+(41,	GeomFromText( ' POINT(302 197) ' )),
+(42,	GeomFromText( ' POINT(290 188) ' )),
+(43,	GeomFromText( ' POINT(297 202) ' )),
+(44,	GeomFromText( ' POINT(358 199) ' )),
+(45,	GeomFromText( ' POINT(384 214) ' )),
+(46,	GeomFromText( ' POINT(281 162) ' )),
+(47,	GeomFromText( ' POINT(264 314) ' )),
+(48,	GeomFromText( ' POINT(256 302) ' )),
+(49,	GeomFromText( ' POINT(221 285) ' )),
+(50,	GeomFromText( ' POINT(197 275) ' )),
+(51,	GeomFromText( ' POINT(179 338) ' )),
+(52,	GeomFromText( ' POINT(161 325) ' )),
+(53,	GeomFromText( ' POINT(378 280) ' )),
+(54,	GeomFromText( ' POINT(362 267) ' )),
+(55,	GeomFromText( ' POINT(530 364) ' )),
+(56,	GeomFromText( ' POINT(535 353) ' )),
+(57,	GeomFromText( ' POINT(589 448) ' )),
+(58,	GeomFromText( ' POINT(691 456) ' )),
+(59,	GeomFromText( ' POINT(698 427) ' )),
+(60,	GeomFromText( ' POINT(716 430) ' )),
+(61,	GeomFromText( ' POINT(723 446) ' )),
+(62,	GeomFromText( ' POINT(687 503) ' )),
+(63,	GeomFromText( ' POINT(674 525) ' )),
+(64,	GeomFromText( ' POINT(652 523) ' )),
+(65,	GeomFromText( ' POINT(645 539) ' )),
+(66,	GeomFromText( ' POINT(659 309) ' )),
+(67,	GeomFromText( ' POINT(716 340) ' )),
+(68,	GeomFromText( ' POINT(524 150) ' )),
+(69,	GeomFromText( ' POINT(476 258) ' )),
+(70,	GeomFromText( ' POINT(241 269) ' )),
+(71,	GeomFromText( ' POINT(284 409) ' )),
+(72,	GeomFromText( ' POINT(272 409) ' )),
+(73,	GeomFromText( ' POINT(204 367) ' )),
+(74,	GeomFromText( ' POINT(231 371) ' )),
+(75,	GeomFromText( ' POINT(381 424) ' )),
+(76,	GeomFromText( ' POINT(466 471) ' )),
+(77,	GeomFromText( ' POINT(338 96) ' )),
+(78,	GeomFromText( ' POINT(349 78) ' )),
+(79,	GeomFromText( ' POINT(409 132) ' ))</string>
+		<string>CREATE TABLE `student` (
+  `stuID` INT(10) UNSIGNED NOT NULL,
+  `location` POINT NOT NULL,
+  PRIMARY KEY (`stuID`),
+  UNIQUE KEY `stuID` (`stuID`),
+  SPATIAL KEY `location` (`location`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1</string>
+		<string>DROP TABLE student</string>
+		<string>INSERT INTO student(stuID,location) VALUES (1,GeomFromText('POINT(220 112)')),
+(2,GeomFromText('POINT(213 135)'))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (1,GeomFromText(POINT(220 112))),
+(2,GeomFromText(POINT(213 135)))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (1,POINT(220 112)),
+(2,POINT(213 135))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (1,GeomFromText(POINT(220 112)),
+(2,GeomFromText(POINT(213 135))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (1,(GeomFromText(POINT(220 112))),
+(2,(GeomFromText(POINT(213 135)))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (1,(GeomFromText("POINT(220 112)")),
+(2,(GeomFromText("POINT(213 135)"))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (1,(GeomFromText('POINT("220" "112")')),
+(2,(GeomFromText('POINT("213" "135")'))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (1,(GeomFromText('POINT(220 112)')),
+(2,(GeomFromText('POINT(213 135)'))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (0,@g)</string>
+		<string>SET @g = 'POINT(228 102)';
+INSERT INTO student(stuID,location) VALUES (0,@g)</string>
+		<string>SET @g = 'POINT(228 102)'</string>
+		<string>INSERT INTO student(stuID,location) VALUES (0,PointFromText(POINT(228 102)))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (0,POINT(228 102))</string>
+		<string>INSERT INTO student(stuID,location) VALUES (0,GEOMETRYFROMTEXT('POINT(228 102)')</string>
+		<string>INSERT INTO student(stuID,location) VALUES (0,GeomFromText('POINT(228 102)')</string>
+		<string>INSERT INTO student(stuID,location) VALUES(0,GeomFromText('POINT(228 102)'),
+(1,GeomFromText('POINT(220 112)'),
+(2,GeomFromText('POINT(213 135)'),
+(3,GeomFromText('POINT(189 177)'),
+(4,GeomFromText('POINT(180 202)'),
+(5,GeomFromText('POINT(166 231)'),
+(6,GeomFromText('POINT(153 257)'),
+(7,GeomFromText('POINT(138 278)'),
+(8,GeomFromText('POINT(125 300)'),
+(9,GeomFromText('POINT(116 320)'),
+(10,GeomFromText('POINT(94 369)')</string>
+		<string>INSERT INTO student(stuID,location) VALUES
+(0,GeomFromText('POINT(228 102)'),
+(1,GeomFromText('POINT(220 112)'),
+(2,GeomFromText('POINT(213 135)'),
+(3,GeomFromText('POINT(189 177)'),
+(4,GeomFromText('POINT(180 202)'),
+(5,GeomFromText('POINT(166 231)'),
+(6,GeomFromText('POINT(153 257)'),
+(7,GeomFromText('POINT(138 278)'),
+(8,GeomFromText('POINT(125 300)'),
+(9,GeomFromText('POINT(116 320)'),
+(10,GeomFromText('POINT(94 369)')</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.21</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,15 @@
+Review ID,User ID,Villa ID,text,Rating
+Rev1,U1,Vil1,'Poor maintainance considering the price.',2
+Rev2,U2,Vil3,'Boring and Dull',1
+Rev3,U4,Vil6,'Love it!',4
+Rev4,U2,Vil1,'Best vila error',2
+Rev5,U7,Vil1,"'Though not clean, has fantastic scenery around it'",3
+Rev6,U5,Vil2,'not recommended',1
+Rev7,U6,Vil1,'Good one',4
+Rev8,U4,Vil4,'I gonna rent again and again',5
+Rev9,U9,Vil3,'Good work',5
+Rev10,U3,Vil9,'A must visit villa',5
+Rev11,U10,Vil8,'Nice',1
+Rev13,U6,Vil7,'poor one',1
+Rev14,U1,Vil7,'popular one',4
+Rev15,U7,Vil3,'wanna go back!',5

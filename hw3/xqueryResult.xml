@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query6>
+   <Employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		    <empID>1</empID>
+		    <empName>PSmith</empName>
+		    <empPhone>243-235-3253</empPhone>
+		    <empOffice>LA</empOffice>
+	  </Employee>
+</query6>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XSD document created with EditiX XML Editor (http://www.editix.com) at Sun Nov 16 14:40:45 PST 2014 -->
+
+<xs:schema  elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Company">
+		<xs:complexType>
+		<xs:sequence>
+		
+		<xs:element maxOccurs="unbounded"  ref="Department"/>
+		<xs:element maxOccurs="unbounded" minOccurs="0" ref="Division"/>
+		<xs:element maxOccurs="unbounded" minOccurs="0" ref="Employee"/>
+		<xs:element maxOccurs="unbounded" minOccurs="0" ref="WorksFor"/>
+		
+		</xs:sequence>
+		</xs:complexType>
+		<xs:key name="PKDepartment">
+			<xs:selector xpath="Department"/>
+			<xs:field xpath="deptID"/>
+		</xs:key>
+		<xs:key name="PKDivision">
+			<xs:selector xpath="Division"/>
+			<xs:field xpath="divID"/>
+		</xs:key>
+		<xs:keyref name="FKhousedDeptID" refer="PKDepartment">
+			<xs:selector xpath="Division/housedDeptID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="FKmanagerEmpID" refer="PKEmployee">
+			<xs:selector xpath="Division/managerEmpID"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:key name="PKEmployee">
+			<xs:selector xpath="Employee"/>
+			<xs:field xpath="empID"/>
+		</xs:key>
+		<xs:key name="PKWorksFor">
+			<xs:selector xpath="WorksFor"/>
+			<xs:field xpath="divID"/>
+			<xs:field xpath="empID"/>
+		</xs:key>
+		
+		<xs:keyref name="FKdivID" refer="PKDivision">
+			<xs:selector xpath="WorksFor"/>
+			<xs:field xpath="divID"/>
+		</xs:keyref>
+		<xs:keyref name="FKempID" refer="PKEmployee">
+			<xs:selector xpath="WorksFor"/>
+			<xs:field xpath="empID"/>
+		</xs:keyref>
+	</xs:element>
+
+	<xs:element name="Employee">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="empID" type="xs:integer"/>
+				
+				
+				<xs:element maxOccurs="1" minOccurs="1" name="empName" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="0" name="empPhone">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[1-9][0-9][0-9]\-[0-9][0-9][0-9]\-[0-9][0-9][0-9][0-9]"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element maxOccurs="1" minOccurs="1" name="empOffice" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Department">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="deptID">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[A-Z][A-Z][A-Z]"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element maxOccurs="1" minOccurs="1" name="deptName" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="deptAddr" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Division">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="divID" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="divName" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="divPhone">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[1-9][0-9][0-9]\-[0-9][0-9][0-9]\-[0-9][0-9][0-9][0-9]"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="housedDeptID" type="xs:string"/>
+				<xs:element name="managerEmpID" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="WorksFor">
+	<xs:complexType >
+		<xs:sequence>
+		<xs:element maxOccurs="1" minOccurs="1" name="divID" type="xs:string"/>
+		<xs:element maxOccurs="1" minOccurs="1" name="empID" type="xs:integer"/>
+		<xs:element maxOccurs="1" minOccurs="1" name="PercentTime" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+</xs:schema>

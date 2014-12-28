@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.commons.cli.BasicParser"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.CommandLineParser"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.Options"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.ParseException"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.Option"/>
+<fullyQualifiedTypeName name="org.apache.commons.cli.CommandLine"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+</qualifiedTypeNameHistroy>

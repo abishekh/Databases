@@ -1,0 +1,20 @@
+
+Build 310513
+- Fixed default excel file extension from xslx to xlsx
+- Fixed SVG Preview including JavaScript code
+- Minor GUI improvements (button border, text font fixed)
+- Removed border for grid buttons
+- Frame title is updated
+- Line number contrast improved
+- Warning now thrown for transformation path with whitespace characters inside 
+- Document Filter available from the project toolbar
+- Property DEFAULT FILE ENCODING is renamed SYSTEM FILE ENCODING
+- Item XSL Scenarios is renamed XSL Scenarios archive
+
+Build 040413
+- Fixed Multiple declarations for DTD, Schema, RelaxNG inference
+- Fixed Wrong order for the reporting list
+- Fixed Default dialog location and size storage
+- Fixed Ctrl Space activator replaced by Command space activator for Mac OS X
+- Default Font for Mac OS X is Courrier/12pt
+- DTD/Schema menu reorganized

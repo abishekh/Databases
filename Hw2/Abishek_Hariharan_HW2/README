@@ -1,0 +1,18 @@
+Name : Abishek Hariharan 
+USCID : 2743190572
+email: abishekh@usc.edu
+
+Instructions for Eclipse :
+
+1.Include all provided 'jar' libraries throut the Java Build Path tab under project properties.
+2.Refresh and Make sure there aren't any issues with linking.
+3.Arguments can be added through the Run Configurations option .
+4.Run with arugements flags '-window' , '-within' , '-nearest_neighbor','-fixed'.
+
+
+Discussion Partners:
+1) Pongsakorn Sukjunnimit
+2) Kamonphop Srisopha
+3) Ailsa Chiu
+4) Yixue Zhao
+5) Jakapun Tachaiya

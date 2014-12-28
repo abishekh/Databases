@@ -1,0 +1,87 @@
+Version 2014
+
+* New Visual editor
+
+- Edit your XML document using a standard CSS (Cascading Style Sheets) file 
+- Visual mode with tags or pure text
+- "On the fly" document location while editing
+- Insert/Append/Delete nodes from any nodes
+- Duplicate any nodes while editing (ctrl/command enter)
+
+* New Project Management
+
+- Direct mapping with physical path
+- Synchronization (upload/download) with multiple local/network/FTP sources
+- Copy/Cut/Paste files or directories
+- Rename (F2 support), Create directory
+- Refresh any parts (F5 support)
+- Save/Restore your parameters automatically
+- Open the native explorer from the selection
+- Copy file path (system and URL format)
+
+* General
+
+- Powerful XML Generator from XPath Expression
+- 17 New UI themes ( using the interface/theme preference )
+- Background tasks starting / stopping displayed in the status bar
+- Update the content assistant component
+- Update for the font preference dialog
+- Update Default font size (editor and tree)
+- Support for XPath 3.0
+- ctrl (command on mac) 1-9 key shortcuts for selecting tabs
+- Hexadecimal editor displays invalid XML characters in red
+
+* XSLT Editor
+
+- Support for XSLT 3.0
+- New Debugger/Profiler for XSLT 3.0
+- Variables and Parameters support for XSLT 2.0 debugging
+- "Double click" on the templates page for editing
+
+* XQuery Editor
+
+- Support for XQuery 3.0
+
+* XHTML Editor
+
+- XHTML Preview ("on the fly" or on query), F5 support
+- Fast <br/> insertion with ctrl (command on mac) enter
+- Fast <p></p> insertion with ctrl (command on mac) shift enter
+
+* New HTML Editor
+
+- HTML Preview ("on the fly" or on query), F5 support
+- HTML 4.0 template
+- HTML 5.0 template
+- HTML 5.0 content assistant
+- Fast <br> insertion with ctrl (command on mac) enter
+- Fast <p></p> insertion with ctrl (command on mac) shift enter
+
+* CSS Editor
+
+- Visual CSS Preview (CSS3 rendering), 
+- Visual refresh on the fly or one query, with F5 support
+- Support for CSS3 (parser & content assistant)
+
+* XSL FO
+
+- Support for relative resources (image...)
+
+* SVG Editor
+
+- SVG Preview, 
+- Visual refresh on query, F5 support
+
+* Bugs fixed
+
+- The search Combo accelerator couldn't be used twice the for same expression
+- The search Combo accelerator didn't work for non XML documents
+- The XML prolog was lost inside the XPath filter
+- Anti-aliasing was disabled on Windows 7
+- Preference for the current line color was ignored
+- Fixed inner DTD parsing
+- The content assistant could freeze with attributes on unknown tags
+- Fixed HTML content assistant
+- Fixed dual screen usage and initial window location (preference windowLocationChecked)
+- Fixed relative path assignation (CSS,XSD,DTD)
+- Fixed XML Form designer schema tree

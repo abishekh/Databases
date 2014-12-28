@@ -1,0 +1,16 @@
+ID,email,First Name,Last Name,DoB,Favorite Villas
+U1,'jack_killer@gmail.com','Jackie','Jones','1983-02-28',"Vil2,Vil4"
+U2,'Hello_macy@yahoo.com','Jessie','Jackson','1986-03-04',Vil8
+U3,'john_black@hotmail.com','Tommy','Trojan','1990-04-22',"Vil10,Vil3,Vil7"
+U4,'ny_robert@usc.edu','Niki','Nanjan','1980-06-10',"Vil10,Vil4"
+U5,'cool_andrew@bbc.co.uk','Jalli','Shadan','1984-11-27',Vil1
+U6,'coryphillip@voa.gov','Houtan','Khandan','1966-06-06',Vil3
+U7,'DaneilJ@msnbc.com','Naz','Nazi','2000-04-20',"Vil2,Vil4,Vil12"
+U8,'rohanau@cs.mit.edu','Ab','Bazi','1956-12-12',"Vil1,Vil9"
+U9,'edmorales@houti.com','Ben','Ghazi','1973-11-10',Vil6
+U10,'danamoon@louti.com','Carlos','Santana','1977-07-07',"Vil11,Vil12"
+U11,'owner1@villa.com','Roberto','Carlos','1955-05-05',null
+U12,'owner2@villa.com','De','Vilardo','1944-04-04',null
+U13,'owner3@villa.com','villa','Blanka','1974-11-11',Vil1
+U14,'ceo@villa.com','nino','bino','1991-01-01',Vil2
+U15,'manager2@villa.com','Bookish','Morinio','1950-04-17',null
